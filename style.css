@@ -1,0 +1,284 @@
+        /* HEADING AND HEADER LINKS STYLE*/
+
+header{
+    background-color: aqua;
+}
+.sub-head1{
+    text-align: center;
+    padding: 15px;
+    font-family: fantasy; font-weight: bolder;
+}
+
+.sub-head2 ul li {
+      display: inline-block;
+      padding-left: 20px;
+      text-decoration: none;
+
+}
+         /* CLEARFIX*/
+
+.sub-head2 ul  {
+   padding-left: 1000px;
+  /*  float: right;
+   clear: both;*/
+   text-decoration: none;
+
+}
+.sub-head2 a  {
+    text-decoration: none;
+line-height: 90px; 
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-style: oblique; font-size: large;font-weight: bold;
+ }
+         /* TABLE STYLING*/
+
+ table, th,td{
+     border: 2px green groove;
+     border-collapse: collapse;
+     padding: 15px;
+ }
+ table, caption{
+     font-style: normal;font-weight: bold;font-size: large;
+     padding-top: 15px;
+     
+ }
+ 
+ table{
+    float: right;
+}
+        /* OVERFLOW AND CLEARFIX*/
+
+.para2{
+   clear: right;
+   padding-top: 15px;
+   overflow: scroll;
+   width: 150px;  
+   height: 170px; 
+   background-color: crimson;
+
+}
+        /* POSITIONING*/
+
+ article .para3{
+    clear: right;
+    padding-top: 50px;
+    position: relative;
+    margin-left: 120px;
+
+}
+        /* WORD WRAP AND BOX SHADOW*/
+
+.para4{
+    word-wrap: break-word;
+    box-shadow:  10px 12px 5px 3px green;
+
+}
+        /* VERTICAL ALIGN*/
+
+#image1{
+    vertical-align: text-top;
+}
+#image2{
+    vertical-align: text-bottom;
+}
+        /* WHITESPACE*/
+
+#wihtespace{
+    white-space: pre-line;
+  border: 3px solid #73AD21;
+  max-width: 500px;
+  margin: auto;
+
+}
+        /* OUTLINE*/
+
+ div .outline{
+    background: blue;
+    border: 3px outset green;
+    outline: red solid 5px;
+    outline-offset: 6px;
+    margin: 100px; padding: 100px;
+    text-align: center;
+}
+        /* CSS VISIBILITY*/
+
+.visible{
+    visibility: hidden;
+}
+        /* COUNTER*/
+
+body{
+    counter-reset: section;
+}
+h4::before{
+    counter-increment: section;
+    content: "Section " counter(section)":";
+}
+/*Nested Counter----------------------- 
+Nested Counter override previous counter*/
+body{
+    counter-reset: section;
+}
+h2::before{
+    counter-increment: section;
+    content: "Sec "counter(section)":";
+}
+h1{
+    counter-reset: number;
+}
+h2::before{
+    counter-increment: number;
+    content: "Number  "counter(number) ":";
+}
+ol{
+    list-style-type: none;
+    counter-reset: num;
+}
+.counter li::before{
+    counter-increment: num;
+   /* content: counters(num,".")" "; */
+   content: "section "counter(num)":";
+
+}
+        /* CLEARFIX*/
+
+.overflowauto{
+    border: 5px yellow inset;
+    background-color: violet;
+    font-size: 20px;
+
+}
+.img{
+    float: right;
+    border: 3px black solid;
+}
+.p{
+    clear: right;
+    font-size: 20px;
+}
+.div2::after {
+   overflow: auto;
+   /* content: ".";
+   clear: both;
+   display: table; */
+
+}
+        /* CSS ICON*/
+
+.fa{  
+    color:red;  
+    font-size:50px;  
+    margin:10px;  
+    }  
+            /* JUISTIFY CONTENT*/
+
+    .justify-content p{
+        justify-content: space-evenly;
+    }
+    #flex{
+        height: 50px; width: 50px;margin: 5px; padding: 5px; font-size: 2em;text-align: center;font-weight: bold;border: mediumaquamarine 3px inset; background-color: mediumpurple;
+    }
+            /* LIST-STYLE*/
+
+    .ordered li{
+       /* list-style-type: upper-alpha;*/
+        list-style-position: inside;
+        list-style-image: url(./car3.png);
+    }
+    .unordered li{
+      /*  list-style-type: circle;
+        list-style-position: outside;*/
+        /* shorthand*/
+        list-style:  circle inside url(./car4.png) ;
+                /* adding extra property,it optional*/
+        background: lightblue;  
+        padding:10px;  
+        font-size:20px;  
+        margin:10px;  
+        color: navy;
+        padding: 56px;
+
+    }
+                /* nth-Child(n) Selector*/
+
+    .nth-child p:nth-child(odd){
+        background-color: yellow;
+        color: turquoise; font-size: 30px;
+    }
+                    /* CSS STICKY*/
+                    .stick{
+                        border: rgb(205, 50, 102) solid  2px;
+                        font-size: 20px; font-weight: bold;padding: 10px;background-color: thistle;top: 50px;
+                        position: sticky;text-align: center;
+
+                    }
+.stick2{
+    border: rgb(70, 110, 47) groove 3px;
+    margin-top: 70px;background-color: rgb(206, 154, 145);position: sticky; font: bold 24px  oblique; text-align: center;
+    margin-bottom: 200px;
+}
+                    /* CSS BACKGROUND CLIP*/
+
+.background-clip h2{
+    border: 5px dotted blue;
+    background-color: yellow; padding: 25px;
+    text-align: center; color: red;
+    background-clip: content-box;
+}
+                    /* CSS CHECKBOX STYLE*/
+                   
+                  /*   .checkbox-container{
+                        margin: 50px auto;
+                        width: 500px;
+                        margin-bottom: 20px;
+                        cursor: pointer; font-size: 15px;
+                        background-color: seagreen;
+                    }
+                        .container input{
+                            visibility: visible;
+                            cursor: pointer;
+                        }
+                 .mark{
+                            position: absolute;
+                            top: 0; left: 0;
+                            height: 5px; width: 5px;
+                            background-color: saddlebrown;
+                        }
+        .container:hover input ~ .mark{
+            background-color: rgb(18, 89, 170);
+        }
+        .container input:checked ~ .mark{
+            background-color: seagreen;
+        }
+        */
+        
+                            /* CSS CHECKBOX STYLE*/
+
+         
+        .check{
+            width: 500px;
+            margin:  50px auto;
+            display: block;
+    
+            background-color: blue; border-radius: 4px;
+
+        }
+        .container {  
+            color: white;  
+                display: block;  
+                position: relative;  
+                margin: auto;  
+                cursor: pointer;  
+                font-size: 22px;  
+                line-height: 24px;  
+                height: 50px;  
+                width: 24px;  
+                clear: both; 
+             }
+             .container:hover input ~ .mark {  
+                background-color: rgb(92, 29, 29);  
+              }  
+              .container input mark{
+                  display: inline;
+              }
+              

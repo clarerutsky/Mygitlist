@@ -1,0 +1,292 @@
+
+   *{
+       margin-top: 20px;
+   }
+   /*CSS Clear and float--------------- 
+
+div {
+   border: 3px outset palevioletred;  height: 200px; width: 300px;
+   padding: 5px; 
+}
+.img1{
+   float: right;
+}
+.clear{
+    clear: left;
+}
+.img2{
+    float: right;
+}
+.clearfix{
+ content: " ";
+  clear: both; display: table;
+}
+   /*CSS layout float--------------- 
+   
+  .clearfioat{
+    box-sizing: border-box;
+}
+.box{
+    float: left; width: 150px;padding: 30px; 
+}
+.clearfioat::after{
+    content: " ";
+   clear: both; display: table;
+   
+}
+   /*CSS layout box-sizing--------------- 
+
+.clearfioat1{
+    box-sizing: border-box;
+    border: 3px outset palevioletred; 
+   width: 600px;
+}
+.box1{
+    float: left; width: 150px;  padding: 0px;
+
+}
+.clearfioat1::after{
+    content: " ";
+   clear: both; display: table;
+
+}
+   /*CSS layout flex-box--------------- *
+
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap; background-color: darkgoldenrod;
+    width: 350px;
+}
+.box2{
+     background-color: burlywood;
+     width: 150px;margin: 10px;  padding: 25px;
+     line-height: 25px; font-size: 25px; word-break: break-all;
+}
+.layoutabsolute{
+    border:  3px solid green;
+   /* position: absolute;
+    right: 0px; left: 800px; padding: 10px; width: 33.33%;----*
+    margin-left: auto; margin-right: auto;width: 40%;
+    
+} 
+
+.layoutcenter{
+   /* line-height: 200px; height: 200px; width: 40%;
+    border: 3px dotted red; text-align:  center;
+    transform: translate(-50%, -50%);
+    -----------------------------------
+    height: 200px;
+    position: relative; border: 3px dotted red; ------
+    display: flex; justify-content: center; height: 200px;
+    border: 3px dotted red;
+}
+
+.layoutcenter p{
+ /*display: inline; vertical-align: middle;  
+ -----------------------------------
+ margin: 0;  position: absolute; top: 50%; left:50%;
+ transform: translate(-50%, -50%); ---------------
+}
+'/
+.link:link{
+       color: yellow;
+       border: 3px dotted red;
+       text-decoration: none;
+}
+.link:visited{
+    color: green;
+    
+}
+.link:hover{
+  color: coral;
+}
+.link:active{
+    color: black;
+  }
+   .thee{
+      display: none; background-color: chartreuse;
+      padding: 20px;
+  }
+
+  .thee:hover .thee{
+    display: block;
+    background-color: aqua;
+}*/ 
+
+/* Pseudo Element 
+  
+::selection{
+    color: purple; 
+
+}*/
+
+/* Vertical Nav Bar 
+
+ul{
+    list-style-type: none;
+    padding: 0; position: fixed;
+    overflow: hidden; top: 0;
+}
+li{
+    float: left;
+    border-right: 2px solid black;
+
+}
+li a, .dropmenu{
+    display: block;
+    text-decoration: none;
+    padding: 14px 16px;
+    background-color: aqua;
+    font-size: 25px;
+    height: 100%; width: 160px;
+}
+
+li a:hover,.dropdown:hover .dropmenu{
+    background-color: greenyellow; color: red;
+}
+ li:last-child{
+    border-right: none;
+}
+.dropdown-content{
+    
+    position: relative;
+    box-shadow: 12px 23px 6px 4px gray;
+    display: none;
+    min-width: 160px;
+
+}
+.dropdown-content a{
+    display: block;
+    color: blue;
+    padding: 16px 12px;
+    background-color: burlywood; text-align: left;
+}
+.dropdown-content a:hover{
+    background-color: rebeccapurple; color: black;
+
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown
+{
+    position: relative; display: inline-block;  
+    height: 1000px; 
+    width: 34%;
+}
+.dropcontent{
+    display: none;
+    position: absolute;
+    box-shadow: 10px 6px 8px 0px green;
+    font-size: 25px; font-weight: bold;
+    padding: 16px 14px; 
+}
+.dropdown:hover  .dropcontent {
+    display: block; 
+}
+
+
+ .dropdown
+ {
+      display: block; position: relative;
+     
+ }
+ .button{
+     background-color: brown; color: black;
+     font-size: 25px; font-weight: bold;cursor: pointer;
+     
+ }
+ .dropmenu{
+     display: none; 
+     position: absolute;
+     box-shadow: 10px 6px 8px 0px gray;
+    min-width: 160px;text-align: center;  padding: 16px;
+    z-index: 1 ;
+ }
+ .dropmenu a{
+    padding: 12px 16px; 
+    text-decoration: none; font-size: 24px; 
+    background-color: bisque; color: #000; 
+    display: block; 
+    
+}
+.dropmenu a:hover {
+    background-color: chartreuse;color: red;
+}
+
+.dropdown:hover .dropmenu {
+  display: block;
+}
+.dropdown:hover .button {
+    background-color: rgb(216, 133, 133);
+    
+  }
+   
+  IMAGE GALLERy***************************************
+
+  
+    div.gallery
+    {    
+        border: 2px solid goldenrod; 
+    }
+    div.gallery:hover{
+        border: 4px dotted darkmagenta;
+    }
+    div .gallery img{
+        width: 150px; 
+        height: auto; 
+    }
+     div .desc{
+        padding: 15px;
+        text-align: center;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    .responsive {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+      }
+      
+    
+    @media screen and (max-width: 700px){
+        .responsive{
+            width: 49.99999%;
+        margin: 6px 0;
+        }
+    }
+
+    @media screen and (max-width: 500px){
+        .responsive{
+            width: 100%; 
+        }
+    }
+    
+        IMAGE SPRIT
+    #navlist
+    {
+        position: relative;
+    }
+    #navlist li{
+        margin: 0;
+        padding: 0; top: 0;
+        list-style: none;
+        position: absolute;
+    }
+    #navlist li #navlist a {
+        height: 44px;
+        display: block;
+    }
+     #home{
+        left: 0px;
+        height: 46px;
+        background: url( ' ./car.png ') 0 0;
+    }
+      */
+      a[target=_blank]{
+          background-color: yellow;
+      }
+      
+   
